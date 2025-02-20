@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mercadomeet/ui/screens/auth/register_screen.dart';
 import 'package:mercadomeet/utils/app_theme.dart';
 import '../../../utils/assets.dart';
 import '../../widgets/auth/custom_text_field.dart';
@@ -56,7 +57,12 @@ class EmailLoginScreen extends StatelessWidget {
                 SizedBox(height: 24),
                 LoginButton(
                   text: 'Continuar',
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RegisterScreen()),
+                    );
+                  },
                 ),
                 SizedBox(height: 24),
               ],
