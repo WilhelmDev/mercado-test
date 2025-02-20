@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mercadomeet/ui/screens/auth/email_login_screen.dart';
 import '../../widgets/auth/login_button.dart';
 import '../../widgets/auth/social_login_button.dart';
 import '../../../utils/assets.dart';
@@ -95,7 +96,12 @@ class LoginScreen extends StatelessWidget {
                 SizedBox(height: 12),
                 LoginButton(
                   text: 'Email y contraseña',
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => EmailLoginScreen()),
+                    );
+                  },
                 ),
                 SizedBox(height: 24),
               ],

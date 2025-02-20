@@ -8,6 +8,7 @@ class Assets {
   static const String facebookIcon = 'assets/icons/facebook.svg';
   static const String emailIcon = 'assets/icons/email.svg';
   static const String logoBase = 'assets/images/MM.svg';
+  static const String lockIcon = 'assets/icons/lock.svg';
 
   static SvgPicture svgAsset(String assetName, {double? width, double? height, Color? color}) {
     return SvgPicture.asset(
